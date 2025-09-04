@@ -3,10 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Open Graph -->
+  <meta property="og:title"content="Taste of Heaven">
+  <meta property="og:type"content="website">
+  <meta property="og:url"content="https://taste-of-heaven.vercel.app/">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="/image/favicon.ico">
   <script src="https://kit.fontawesome.com/de16b8ca46.js" crossorigin="anonymous"></script>
-  <title>Taste of Heaven | Restuarant</title>
+  <title>Taste of Heaven | Restaurant</title>
 </head>
 <body>
   <!-- HERO SECTION -->
@@ -20,10 +24,10 @@
         <li><a class="link" href="#about">ABOUT</a></li>
         <li><a class="link" href="#menu">MENU</a></li>
         <li><a class="link" href="#testimonials-section">TESTIMONIALS</a></li>
-        <li><a class="link btn" href="#contact">RESERVE TABLE</a></li>
+        <li><a class="link btn" href="#contact" role="button">RESERVE TABLE</a></li>
       </ul>
 
-      <div class="hamburger">
+      <div class="hamburger" role="navigation" aria-label="navbar toggle button">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
@@ -33,111 +37,111 @@
     <div class="hero-text container">
       <h1 class="hero-heading">Taste of <span class="text-primary">Heaven</span></h1>
       <h3 class="hero-subheading">Where every bite tastes <span class="text-primary">divine.</span></h3>
-      <a class="btn" href="#menu">EXPLORE MENU</a>
+      <a class="btn" href="#menu" aria-label="explore menu button">EXPLORE MENU</a>
     </div>
   </header>
 
   <!-- MENU CAROUSEL -->
-  <section class="menu-carousel">
+  <section class="menu-carousel" aria-label="carousel slider showing our popular dishes">
     <h2 class="primary-header"><span class="text-primary">Popular</span> Dishes</h2>
     <div class="cards">
       <div class="card">
-        <img src="./image/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="">
+        <img src="./image/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="mushroom pizza dish">
         <h3>Mushroom Pizza</h3>
-        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="stars" aria-label="five star dish">⭐⭐⭐⭐⭐</div>
         <div class="card-footer">
           <p class="price">$19.99</p>
-          <button class="btn buy-btn">Buy Now</button>
+          <button class="btn buy-btn" aria-label="buy button">Place Order</button>
         </div>
       </div>
       <div class="card">
-        <img src="./image/anna-pelzer-IGfIGP5ONV0-unsplash.jpg" alt="">
+        <img src="./image/anna-pelzer-IGfIGP5ONV0-unsplash.jpg" alt="cali style salmon salad dish">
         <h3>Cali Style Salad</h3>
-        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="stars" aria-label="five star dish">⭐⭐⭐⭐⭐</div>
         <div class="card-footer">
           <p class="price">$24.99</p>
-          <button class="btn buy-btn">Buy Now</button>
+          <button class="btn buy-btn" aria-label="buy button">Place Order</button>
         </div>
       </div>
       <div class="card">
-        <img src="./image/anh-nguyen-kcA-c3f_3FE-unsplash.jpg" alt="">
+        <img src="./image/anh-nguyen-kcA-c3f_3FE-unsplash.jpg" alt="salmon poke dish">
         <h3>Salmon Poke</h3>
-        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="stars" aria-label="five star dish">⭐⭐⭐⭐⭐</div>
         <div class="card-footer">
           <p class="price">$19.99</p>
-          <button class="btn buy-btn">Buy Now</button>
+          <button class="btn buy-btn" aria-label="buy button">Place Order</button>
         </div>
       </div>
       <div class="card">
-        <img src="./image/istockphoto-1190330112-612x612.jpg" alt="">
+        <img src="./image/istockphoto-1190330112-612x612.jpg" alt="duck breast dish">
         <h3>Duck Breast</h3>
-        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="stars" aria-label="five star dish">⭐⭐⭐⭐⭐</div>
         <div class="card-footer">
           <p class="price">$29.99</p>
-          <button class="btn buy-btn">Buy Now</button>
+          <button class="btn buy-btn" aria-label="buy button">Place Order</button>
         </div>
       </div>
       <div class="card">
-        <img src="./image/joseph-gonzalez-fdlZBWIP0aM-unsplash.jpg" alt="">
+        <img src="./image/joseph-gonzalez-fdlZBWIP0aM-unsplash.jpg" alt="nicoise salad dish">
         <h3>Nicoise Salad</h3>
-        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="stars" aria-label="five star dish">⭐⭐⭐⭐⭐</div>
         <div class="card-footer">
           <p class="price">$19.99</p>
-          <button class="btn buy-btn">Buy Now</button>
+          <button class="btn buy-btn" aria-label="buy button">Place Order</button>
         </div>
       </div>
       <div class="card">
         <img src="./image/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg" alt="">
         <h3>French Toast</h3>
-        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="stars" aria-label="five star dish">⭐⭐⭐⭐⭐</div>
         <div class="card-footer">
           <p class="price">$19.99</p>
-          <button class="btn buy-btn">Buy Now</button>
+          <button class="btn buy-btn" aria-label="buy button">Place Order</button>
         </div>
       </div>
       <div class="card">
         <img src="./image/istockphoto-1129075054-612x612.jpg" alt="">
         <h3>Nachos</h3>
-        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="stars" aria-label="five star dish">⭐⭐⭐⭐⭐</div>
         <div class="card-footer">
           <p class="price">$39.99</p>
-          <button class="btn buy-btn">Buy Now</button>
+          <button class="btn buy-btn" aria-label="buy button">Place Order</button>
         </div>
       </div>
       <div class="card">
-        <img src="./image/istockphoto-1047798504-612x612.jpg" alt="">
+        <img src="./image/istockphoto-1047798504-612x612.jpg" alt="buddha bowl dish">
         <h3>Buddha Bowl</h3>
-        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="stars" aria-label="five star dish">⭐⭐⭐⭐⭐</div>
         <div class="card-footer">
           <p class="price">$29.99</p>
-          <button class="btn buy-btn">Buy Now</button>
+          <button class="btn buy-btn" aria-label="buy button">Place Order</button>
         </div>
       </div>
       <div class="card">
         <img src="./image/istockphoto-1150368715-612x612.jpg" alt="">
         <h3>Duck Confit</h3>
-        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="stars" aria-label="five star dish">⭐⭐⭐⭐⭐</div>
         <div class="card-footer">
           <p class="price">$29.99</p>
-          <button class="btn buy-btn">Buy Now</button>
+          <button class="btn buy-btn" aria-label="buy button">Place Order</button>
         </div>
       </div>
       <div class="card">
-        <img src="./image/istockphoto-1155681995-612x612.jpg" alt="">
+        <img src="./image/istockphoto-1155681995-612x612.jpg" alt="pasta and meatballs dish">
         <h3>Pasta & Meatballs</h3>
         <div class="stars">⭐⭐⭐⭐⭐</div>
         <div class="card-footer">
           <p class="price">$24.99</p>
-          <button class="btn buy-btn">Buy Now</button>
+          <button class="btn buy-btn" aria-label="buy button">Place Order</button>
         </div>
       </div>
       <div class="card">
-        <img src="./image/istockphoto-1189709277-612x612.jpg" alt="">
+        <img src="./image/istockphoto-1189709277-612x612.jpg" alt="penne arrabbiata dish">
         <h3>Penne Arrabbiata</h3>
-        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="stars" aria-label="five star dish">⭐⭐⭐⭐⭐</div>
         <div class="card-footer">
           <p class="price">$39.99</p>
-          <button class="btn buy-btn">Buy Now</button>
+          <button class="btn buy-btn" aria-label="buy button">Place Order</button>
         </div>
       </div>
     </div>
@@ -146,7 +150,7 @@
   <!-- ABOUT SECTION -->
   <section id="about">
     <div class="about-content container">
-      <img class="about-img" src="./image/anwarul-islam-zim-4FXJ6xej5zo-unsplash.jpg" alt="about us image" width="400px" height="400px">
+      <img class="about-img" src="./image/anwarul-islam-zim-4FXJ6xej5zo-unsplash.jpg" alt="about us image" width="400px">
       <div class="about-desc">
         <h2 class="primary-header"><span class="text-primary">About</span> Us</h2>
         <p>At Taste of Heaven, we believe food is more than just a meal - it's an experience. Our passion is crafting dishes that bring people together, combining fresh, locally sourced ingredients with flavors that feel like home. </p>
@@ -158,7 +162,7 @@
             <li><i class="fa-solid fa-calendar-days"></i>Pre-Reservation</li>
             <li><i class="fa-solid fa-clock"></i>24/7 Service</li>
             <li><i class="fa-solid fa-mitten"></i>Super Chefs</li>
-            <li><i class="fa-solid fa-house"></i>Organized Foodie Place</li>
+            <li><i class="fa-solid fa-house"></i>Culinary Hub</li>
             <li><i class="fa-solid fa-kitchen-set"></i>Clean Kitchen</li>
           </ul>
         </div>
@@ -167,7 +171,7 @@
   </section>
 
   <!-- MENU SECTION -->
-  <section id="menu">
+  <section id="menu" aria-label="food menu of available dishes">
     <h2 class="primary-header text-primary">Menu</h2>
     <div class="menu-dishes">
       <div class="item">
@@ -175,9 +179,9 @@
         <div class="dish-overlay">
           <div class="dish-info">
             <h3>Steak & Potatoes</h3>
-            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="stars" aria-label="five star dish">⭐⭐⭐⭐⭐</div>
             <p class="price">$19.99</p>
-            <button class="btn buy-btn">Buy Now</button>
+            <button class="btn buy-btn" aria-label="buy button">Buy Now</button>
           </div>
         </div>
       </div>
@@ -187,9 +191,9 @@
         <div class="dish-overlay">
           <div class="dish-info">
             <h3>Grilled Lamb Chops</h3>
-            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="stars" aria-label="five star dish">⭐⭐⭐⭐⭐</div>
             <p class="price">$19.99</p>
-            <button class="btn buy-btn">Buy Now</button>
+            <button class="btn buy-btn" aria-label="buy button">Buy Now</button>
           </div>
         </div>
       </div>
@@ -199,9 +203,9 @@
         <div class="dish-overlay">
           <div class="dish-info">
             <h3>Grilled Fish</h3>
-            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="stars" aria-label="five star dish">⭐⭐⭐⭐⭐</div>
             <p class="price">$19.99</p>
-            <button class="btn buy-btn">Buy Now</button>
+            <button class="btn buy-btn" aria-label="buy button">Buy Now</button>
           </div>
         </div>
       </div>
@@ -211,9 +215,9 @@
         <div class="dish-overlay">
           <div class="dish-info">
             <h3>Potatoes & Vegetables</h3>
-            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="stars" aria-label="five star dish">⭐⭐⭐⭐⭐</div>
             <p class="price">$29.99</p>
-            <button class="btn buy-btn">Buy Now</button>
+            <button class="btn buy-btn" aria-label="buy button">Buy Now</button>
           </div>
         </div>
       </div>
@@ -223,9 +227,9 @@
         <div class="dish-overlay">
           <div class="dish-info">
             <h3>Bulgogi</h3>
-            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="stars" aria-label="five star dish">⭐⭐⭐⭐⭐</div>
             <p class="price">$22.99</p>
-            <button class="btn buy-btn">Buy Now</button>
+            <button class="btn buy-btn" aria-label="buy button">Buy Now</button>
           </div>
         </div>
       </div>
@@ -235,9 +239,9 @@
         <div class="dish-overlay">
           <div class="dish-info">
             <h3>Chicken Biryani</h3>
-            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="stars" aria-label="five star dish">⭐⭐⭐⭐⭐</div>
             <p class="price">$29.99</p>
-            <button class="btn buy-btn">Buy Now</button>
+            <button class="btn buy-btn" aria-label="buy button">Buy Now</button>
           </div>
         </div>
       </div>
@@ -247,9 +251,9 @@
         <div class="dish-overlay">
           <div class="dish-info">
             <h3>Aglio e Olio</h3>
-            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="stars" aria-label="five star dish">⭐⭐⭐⭐⭐</div>
             <p class="price">$39.99</p>
-            <button class="btn buy-btn">Buy Now</button>
+            <button class="btn buy-btn" aria-label="buy button">Buy Now</button>
           </div>
         </div>
       </div>
@@ -259,9 +263,9 @@
         <div class="dish-overlay">
           <div class="dish-info">
             <h3>Chicken Piccata</h3>
-            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="stars" aria-label="five star dish">⭐⭐⭐⭐⭐</div>
             <p class="price">$34.99</p>
-            <button class="btn buy-btn">Buy Now</button>
+            <button class="btn buy-btn" aria-label="buy button">Buy Now</button>
           </div>
         </div>
       </div>
@@ -271,9 +275,9 @@
         <div class="dish-overlay">
           <div class="dish-info">
             <h3>Shrimp & Grits</h3>
-            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="stars" aria-label="five star dish">⭐⭐⭐⭐⭐</div>
             <p class="price">$9.99</p>
-            <button class="btn buy-btn">Buy Now</button>
+            <button class="btn buy-btn" aria-label="buy button">Buy Now</button>
           </div>
         </div>
       </div>
@@ -283,9 +287,9 @@
         <div class="dish-overlay">
           <div class="dish-info">
             <h3>Salmon Salad</h3>
-            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="stars" aria-label="five star dish">⭐⭐⭐⭐⭐</div>
             <p class="price">$19.99</p>
-            <button class="btn buy-btn">Buy Now</button>
+            <button class="btn buy-btn" aria-label="buy button">Buy Now</button>
           </div>
         </div>
       </div>
@@ -295,9 +299,9 @@
         <div class="dish-overlay">
           <div class="dish-info">
             <h3>Pad See Ew</h3>
-            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="stars" aria-label="five star dish">⭐⭐⭐⭐⭐</div>
             <p class="price">$13.99</p>
-            <button class="btn buy-btn">Buy Now</button>
+            <button class="btn buy-btn" aria-label="buy button">Buy Now</button>
           </div>
         </div>
       </div>
@@ -307,9 +311,9 @@
         <div class="dish-overlay">
           <div class="dish-info">
             <h3>Bibimbap</h3>
-            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="stars" aria-label="five star dish">⭐⭐⭐⭐⭐</div>
             <p class="price">$29.99</p>
-            <button class="btn buy-btn">Buy Now</button>
+            <button class="btn buy-btn" aria-label="buy button">Buy Now</button>
           </div>
         </div>
       </div>
@@ -319,9 +323,9 @@
         <div class="dish-overlay">
           <div class="dish-info">
             <h3>Lamb Chops</h3>
-            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="stars" aria-label="five star dish">⭐⭐⭐⭐⭐</div>
             <p class="price">$22.99</p>
-            <button class="btn buy-btn">Buy Now</button>
+            <button class="btn buy-btn" aria-label="buy button">Buy Now</button>
           </div>
         </div>
       </div>
@@ -331,9 +335,9 @@
         <div class="dish-overlay">
           <div class="dish-info">
             <h3>Salmon & Vegetables</h3>
-            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="stars" aria-label="five star dish">⭐⭐⭐⭐⭐</div>
             <p class="price">$29.99</p>
-            <button class="btn buy-btn">Buy Now</button>
+            <button class="btn buy-btn" aria-label="buy button">Buy Now</button>
           </div>
         </div>
       </div>
@@ -343,9 +347,9 @@
         <div class="dish-overlay">
           <div class="dish-info">
             <h3>Chicken & Rice</h3>
-            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="stars" aria-label="five star dish">⭐⭐⭐⭐⭐</div>
             <p class="price">$19.99</p>
-            <button class="btn buy-btn">Buy Now</button>
+            <button class="btn buy-btn" aria-label="buy button">Buy Now</button>
           </div>
         </div>
       </div>
@@ -353,61 +357,61 @@
   </section>
   
   <!-- TESTIMONIAL SECTION -->
-  <section id="testimonials-section">
+  <section id="testimonials-section" aria-label="what people say about us">
     <h2 class="primary-header">Testimonials</h2>
 
     <div class="testimonials">
       <div class="testimonial-card testimonial-1">
-        <p>Taste of Heaven completely changed how I think about dining out. Every dish was beautifully plated and full of flavor. The attention to detail in every bite made the whole experience unforgettable. I can't wait to come back!</p>
+        <p>Taste of Heaven completely changed how I think about dining out. Every dish was beautifully plated and full of flavor. The attention to detail in every bite made the whole experience unforgettable.</p>
         <h4 class="customer-info"> Amelia Brooks</h4>
-        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="stars" aria-label="five star rating">⭐⭐⭐⭐⭐</div>
       </div>
       <div class="testimonial-card testimonial-2">
         <p>I never thought food could taste this fresh and flavorful. From the moment I walked in, the warm ambiance and friendly staff made me feel at home. This is hands down one of the best dining experiences I've ever had.</p>
         <h4 class="customer-info"> Daniel Harper</h4>
-        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="stars" aria-label="five star rating">⭐⭐⭐⭐⭐</div>
       </div>
       <div class="testimonial-card testimonial-3">
         <p>Perfect ambience, excellent service, and dishes that are pure art. It felt like a fine-dining experience without being pretentious. Taste of Heaven is now my go-to spot for every special occasion.</p>
         <h4 class="customer-info"> Sofia Martinez</h4>
-        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="stars" aria-label="five star rating">⭐⭐⭐⭐⭐</div>
       </div>
       <div class="testimonial-card testimonial-4">
         <p>The presentation alone had me impressed, but the flavors were out of this world! Every bite felt like a perfect balance of creativity and comfort. I'll definitely be recommending this place to everyone I know.</p>
         <h4 class="customer-info"> Zeddicus Zu'l Zorander</h4>
-        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="stars" aria-label="five star rating">⭐⭐⭐⭐⭐</div>
       </div>
       <div class="testimonial-card testimonial-5">
         <p>A must-visit! From starters to dessert, everything was flawless. The chefs clearly put their heart into each dish, and the atmosphere made the night even more special. I'm already planning my next visit</p>
         <h4 class="customer-info"> Lily Bennett</h4>
-        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="stars" aria-label="five star rating">⭐⭐⭐⭐⭐</div>
       </div>
       <div class="testimonial-card testimonial-6">
         <p>Best dining experience I've had in years. Taste of Heaven truly lives up to its name, delivering both incredible flavors and a warm, welcoming vibe. It's rare to find a place this consistent and memorable.</p>
         <h4 class="customer-info"> Noah Carter</h4>
-        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="stars" aria-label="five star rating">⭐⭐⭐⭐⭐</div>
       </div>
       <div class="testimonial-card testimonial-7">
         <p>The staff is so warm and welcoming, and the food tastes like it's made with love. Every detail, from the plating to the service, is done with care. It's more than just a meal; it's an experience.</p>
         <h4 class="customer-info"> Isabella Reed</h4>
-        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="stars" aria-label="five star rating">⭐⭐⭐⭐⭐</div>
       </div>
       <div class="testimonial-card testimonial-8">
         <p>I came here on a whim, and now it's my favorite spot. The menu is full of amazing choices, and each dish tastes even better than it looks. This place deserves all the praise it gets.</p>
         <h4 class="customer-info">  Lucas Grant</h4>
-        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="stars" aria-label="five star rating">⭐⭐⭐⭐⭐</div>
       </div>
     </div>
   </section>
 
   <!-- CONTACT SECTION -->
-  <section id="contact">
+  <section id="contact" aria-label="fill the form to reserve a table">
     <div class="contact-content">
       <div class="contact-form">
         <h6>Contact Us</h6>
         <h2 class="primary-header">Make a <span class="text-primary">Reservation</span></h2>
   
-        <form action="">
+        <form>
           <input class="input-item" type="text" name="fullname" id="fullname" placeholder="Full Name*" required>
 
           <input class="input-item" type="email" name="email" id="email" placeholder="Email Address*" required>
@@ -420,7 +424,7 @@
             <input type="time" name="reservation_time" id="reservation_time" value="19:00" min="07:00" max="23:30" required>
           </div>
 
-          <button class="btn form-btn">Reserve Now</button>
+          <button class="btn form-btn" aria-label="Reserve a table button">Reserve Now</button>
         </form>
       </div>
       <div class="contact-image">
