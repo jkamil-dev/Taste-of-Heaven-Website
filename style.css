@@ -416,7 +416,6 @@ body {
   margin-inline: auto;
   position: relative;
   min-height: 300px;
-  overflow-y: visible; 
   mask-image: linear-gradient(
     to right,
     rgba(0, 0, 0, 0.1),
@@ -446,7 +445,7 @@ body {
   margin: 0 1rem;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 2rem;
 }
 
 .testimonial-card .customer-info {
