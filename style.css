@@ -214,7 +214,7 @@ body {
 
 .cards::scroll-button(right),
 .cards::scroll-button(left) {
-  content: '➡';
+  content: '→';
   border: none;
   display: flex;
   justify-content: center;
@@ -235,7 +235,7 @@ body {
 }
 
 .cards::scroll-button(left) {
-  content: '⬅';
+  content: '←';
   position-area: left center;
   translate: 50%;
 }
@@ -415,8 +415,8 @@ body {
   max-width: 1536px;
   margin-inline: auto;
   position: relative;
-  min-height: 220px;
-  overflow: hidden;
+  min-height: 300px;
+  overflow-y: visible; 
   mask-image: linear-gradient(
     to right,
     rgba(0, 0, 0, 0.1),
@@ -435,8 +435,7 @@ body {
   border-radius: 1rem;
   padding: 1.5rem;
   width: 300px;
-  aspect-ratio: 5 / 3;
-  height: 100%;
+  height: auto;
   border-radius: 6px;
   position: absolute;
   left: max(calc(280px * 8), 100%);
@@ -447,7 +446,7 @@ body {
   margin: 0 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 4rem;
 }
 
 .testimonial-card .customer-info {
@@ -714,6 +713,24 @@ input[type="time"] {
 
 /* TABLETS - 768px */
 @media screen and (max-width: 768px) {
+  .about-content {
+    gap: 2rem;
+    padding: 4rem 2rem;
+  }
+
+  .qualities {
+    margin-top: 1rem;
+    row-gap: 12px;
+  }
+
+  .back-to-top {
+    right: 1rem;
+    bottom: 1rem;
+  }
+}
+
+/* SMALL LAPTOPS - 990px */
+@media screen and (max-width: 990px) {
   .hamburger { display: block; }
 
   .hamburger.active .bar:nth-child(2) { opacity: 0; }
@@ -739,24 +756,6 @@ input[type="time"] {
 
   .nav-links.active { top: 50px; }
 
-  .about-content {
-    gap: 2rem;
-    padding: 4rem 2rem;
-  }
-
-  .qualities {
-    margin-top: 1rem;
-    row-gap: 12px;
-  }
-
-  .back-to-top {
-    right: 1rem;
-    bottom: 1rem;
-  }
-}
-
-/* SMALL LAPTOPS - 990px */
-@media screen and (max-width: 990px) {
   #footer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
