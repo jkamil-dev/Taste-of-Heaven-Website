@@ -416,7 +416,7 @@ body {
   max-width: 1536px;
   margin-inline: auto;
   position: relative;
-  min-height: 300px;
+  min-height: 250px;
   mask-image: linear-gradient(
     to right,
     rgba(0, 0, 0, 0.1),
@@ -435,7 +435,7 @@ body {
   border-radius: 1rem;
   padding: 1.5rem;
   width: 300px;
-  height: 100%;
+  height: auto;
   border-radius: 6px;
   position: absolute;
   left: max(calc(300px * 8), 100%);
@@ -446,7 +446,7 @@ body {
   margin: 0 1rem;
   display: flex;
   flex-direction: column;
-  gap: 7rem;
+  gap: 1.5rem;
 }
 
 .testimonial-card .customer-info {
