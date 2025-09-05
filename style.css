@@ -445,7 +445,11 @@ body {
   margin: 0 1rem;
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   /* gap: 2rem; */
+=======
+  gap: 2rem;
+>>>>>>> 3125b5fa41f063bf3c5b8584596a90608c21d40f
 }
 
 .testimonial-card .customer-info {
