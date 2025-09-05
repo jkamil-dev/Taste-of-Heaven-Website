@@ -214,7 +214,7 @@ body {
 
 .cards::scroll-button(right),
 .cards::scroll-button(left) {
-  content: '→';
+  content: '➡';
   border: none;
   display: flex;
   justify-content: center;
@@ -223,7 +223,7 @@ body {
   font-family: var(--font-body);
   font-size: 2rem;
   font-weight: 500;
-  color: var(--grey-text);
+  color: var(--dark-text);
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -235,7 +235,7 @@ body {
 }
 
 .cards::scroll-button(left) {
-  content: '←';
+  content: '⬅';
   position-area: left center;
   translate: 50%;
 }
@@ -247,7 +247,7 @@ body {
 }
 
 .card {
-  flex: 0 0 20em;
+  flex: 0 0 25em;
   aspect-ratio: 5 / 3;
   background-color: var(--dark-background);
   color: var(--grey-text);
@@ -255,6 +255,7 @@ body {
   border-radius: .5em;
   text-align: center;
   align-content: center;
+  justify-content: center;
   scroll-snap-align: start;
 }
 
@@ -279,7 +280,8 @@ body {
 
 .card-footer {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 1.5rem;
   align-items: center;
   padding: 0 1rem;
 }
@@ -434,6 +436,7 @@ body {
   padding: 1.5rem;
   width: 300px;
   aspect-ratio: 5 / 3;
+  height: 100%;
   border-radius: 6px;
   position: absolute;
   left: max(calc(280px * 8), 100%);
@@ -442,6 +445,9 @@ body {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .testimonial-card .customer-info {
@@ -505,6 +511,8 @@ body {
   background-color: #e2e0e0;
 }
 
+.contact-form .input-item::placeholder { font-size: 10px; }
+
 .date-time {
   display: flex;
   flex-direction: row;
@@ -522,6 +530,11 @@ body {
   font-size: clamp(1rem, 1.5vw + 0.5rem, 1.25rem);
   width: 50%;
   background-color: #e2e0e0;
+}
+
+input[type="date"],
+input[type="time"] {
+  font-size: 10px;
 }
 
 .form-btn {
@@ -627,8 +640,8 @@ body {
   align-items: center;
   color: #121212;
   position: fixed;
-  right: 10px;
-  bottom: 10px;
+  right: 2rem;
+  bottom: 2rem;
   padding: 10px;
   border-radius: 5px;
   background: var(--primary-gold);
@@ -722,11 +735,6 @@ body {
     z-index: 10;
   }
 
-  .card-footer {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
   .link { margin: 16px 0; }
 
   .nav-links.active { top: 50px; }
@@ -739,6 +747,11 @@ body {
   .qualities {
     margin-top: 1rem;
     row-gap: 12px;
+  }
+
+  .back-to-top {
+    right: 1rem;
+    bottom: 1rem;
   }
 }
 
